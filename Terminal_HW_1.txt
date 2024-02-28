@@ -1,0 +1,83 @@
+Первая часть первого  ДЗ
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я - 
+			pwd
+
+2) Создать папку -
+  			mkdir Car
+
+3) Зайти в папку - 
+			cd Car
+
+4) Создать 3 папки -  
+			mkdir Audi BMW Mercedes
+
+5) Зайти в любоую папку - 
+			cd Audi
+
+6) Создать 5 файлов (3 txt, 2 json) - 
+			touch White.txt Grey.txt Black.txt A4.json Q3.json
+
+7) Создать 3 папки - 
+			mkdir Colours Models Styles
+
+8. Вывести список содержимого папки - 
+			ls -la
+
+9) + Открыть любой txt файл - 
+			cat > Black.txt
+
+10) + написать туда любой текст   
+				  Type
+				  Any
+				  Text
+11) + сохранить и выйти	  
+			Enter ^C
+
+
+12) Выйти из папки на уровень выше - 
+			cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку -  
+			cd Audi				   
+			mv Black.txt White.txt Colours/
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку -  
+			cp A4.json Q3.json Models/
+
+15) Найти файл по имени - 
+			cd ..
+			find . -type f -name Grey.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает - 
+			cd Colours							
+			tail -f Black.txt
+
+17) вывести несколько первых строк из текстового файла - 
+			head -3 Black.txt
+
+18) вывести несколько последних строк из текстового файла - 
+			tail -3 Black.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает - 
+			less Black.txt
+
+20) вывести дату и время - 
+			date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+			curl -v http://162.55.220.72:5005/terminal-hw-request
+		
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+		cd Car; mkdir Car1 Car2 Car3; cd Car1; touch 1.txt 2.txt 3.txt 4.json 5.json; mkdir F1 F2 F3; ls -la; mv 4.json 5.json F1/
+  	
+
+=====================
+
+
